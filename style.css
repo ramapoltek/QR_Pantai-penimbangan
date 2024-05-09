@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pemandangan pantai penimbangan.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #0275d8;
+}
+
+h2, h3 {
+    color: #5cb85c;
+}
+
+
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parkir pantai penimbangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- judulnya -->
+    <h1>selamat datang di sistem parkir kami</h1>
+    <h2>silahkan pilih jenis kendaraan yang masuk:</h2>
+    <label for="vehicleType">Jenis Kendaraan:</label>
+    <select id="vehicleType" onchange="updatePrice()">
+        <option value="0">Pilih Kendaraan</option>
+        <option value="2000">Sepeda Motor - Rp2.000</option>
+        <option value="5000">Mobil - Rp5.000</option>
+    </select>
+    
+    
+    
+    <button onclick="payWithEWallet()">Bayar dengan E-Wallet</button>
+    <p id="paymentStatus"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
