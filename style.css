@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('pemandangan pantai penimbangan.jpeg');
-    background-size: cover;
+    background-size: cover; /* Menutupi seluruh area */
     background-position: center center; /* Memastikan gambar selalu di tengah */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-    margin: 0;
-    padding: 10px; /* Mengurangi padding secara umum untuk semua ukuran layar */
-    color: #333;
     background-attachment: fixed; /* Membuat gambar latar tidak bergeser bersama dengan konten saat di-scroll */
+    margin: 0;
+    padding: 0; /* Menghilangkan padding */
+    height: 100vh; /* Memastikan body memiliki tinggi minimal sama dengan tinggi viewport */
+    color: #333;
 }
 
 @media (max-width: 768px) {
     body {
         background-attachment: scroll; /* Mengubah attachment menjadi scroll di perangkat kecil */
-        padding: 10px; /* Mengurangi padding di perangkat kecil */
         background-position: top center; /* Mengoptimalkan posisi gambar di perangkat mobile */
     }
 }
