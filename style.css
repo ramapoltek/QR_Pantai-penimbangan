@@ -5,7 +5,7 @@ body {
     background-position: center center; /* Memastikan gambar selalu di tengah */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     margin: 0;
-    padding: 20px;
+    padding: 10px; /* Mengurangi padding secara umum untuk semua ukuran layar */
     color: #333;
     background-attachment: fixed; /* Membuat gambar latar tidak bergeser bersama dengan konten saat di-scroll */
 }
@@ -29,10 +29,10 @@ h1 {
     left: 0;
     right: 50px;
     text-align: center;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto 20px; /* Menambahkan margin bawah */
+    padding: 10px 0; /* Menambahkan padding atas dan bawah untuk judul */
     border-radius: 5px;
-    font-size: 1.5em; /* Ukuran font yang lebih kecil untuk mobile */
+    font-size: 24px; /* Meningkatkan ukuran font untuk judul */
     text-align: center; /* Teks rata tengah */
 }
 
@@ -54,19 +54,19 @@ button {
     right: 50%;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 12px 20px; /* Menyesuaikan padding untuk tombol */
     border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
+    font-size: 18px; /* Meningkatkan ukuran font untuk tombol */
+    margin: 5px 2px; /* Mengurangi margin atas untuk tombol */
     cursor: pointer;
     border-radius: 5px;
-    width: 100%; /* Lebar penuh untuk memudahkan akses di mobile */
+    width: auto; /* Mengubah lebar menjadi auto agar tidak memenuhi seluruh lebar layar */
     padding: 10px;
-    margin-top: 10px; /* Memberikan sedikit ruang di atas elemen */
+    margin-top: 5px; /* Mengurangi margin atas untuk tombol */
 }
 
 button:hover {
