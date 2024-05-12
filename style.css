@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('pemandangan pantai penimbangan.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center center; /* Memastikan gambar selalu di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     margin: 0;
     padding: 20px;
     color: #333;
@@ -13,6 +14,7 @@ body {
     body {
         background-attachment: scroll; /* Mengubah attachment menjadi scroll di perangkat kecil */
         padding: 10px; /* Mengurangi padding di perangkat kecil */
+        background-position: top center; /* Mengoptimalkan posisi gambar di perangkat mobile */
     }
 }
 
