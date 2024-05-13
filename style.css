@@ -1,22 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('pemandangan pantai penimbangan.jpeg');
-    background-size: cover; /* Menutupi seluruh area */
-    background-position: center center; /* Memastikan gambar selalu di tengah */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-    background-attachment: fixed; /* Membuat gambar latar tidak bergeser bersama dengan konten saat di-scroll */
+    background-size: cover;
+    background-position: center;
     margin: 0;
-    padding: 0; /* Menghilangkan padding */
-    height: 100vh; /* Memastikan body memiliki tinggi minimal sama dengan tinggi viewport */
+    padding: 20px;
     color: #333;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* Mengubah attachment menjadi scroll di perangkat kecil */
-        background-position: top center; /* Mengoptimalkan posisi gambar di perangkat mobile */
-    }
-}
+
 
 .centered-content {
     text-align: center; /* Menyelaraskan teks ke tengah */
@@ -29,18 +21,30 @@ h1 {
     left: 0;
     right: 50px;
     text-align: center;
-    margin: 0 auto 20px; /* Menambahkan margin bawah */
-    padding: 10px 0; /* Menambahkan padding atas dan bawah untuk judul */
+    margin: 0 auto;
+    padding: 20px;
     border-radius: 5px;
-    font-size: 24px; /* Meningkatkan ukuran font untuk judul */
-    text-align: center; /* Teks rata tengah */
+    
 }
 
+h2{
+    color: #eaebea;
+    left: 0;
+    right: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
 
 label[for="vehicleType"] {
     margin-left: 416px; /* Menggeser label ke kanan sebanyak 20px */
-    color: black;
 }
+
+
+
+
+
 
 
 p {
@@ -54,22 +58,22 @@ button {
     right: 50%;
     text-align: center;
     margin: 0 auto;
-    padding: 12px 20px; /* Menyesuaikan padding untuk tombol */
+    padding: 20px;
     border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px; /* Meningkatkan ukuran font untuk tombol */
-    margin: 5px 2px; /* Mengurangi margin atas untuk tombol */
+    font-size: 16px;
+    margin: 10px 2px;
     cursor: pointer;
     border-radius: 5px;
-    width: auto; /* Mengubah lebar menjadi auto agar tidak memenuhi seluruh lebar layar */
-    padding: 10px;
-    margin-top: 5px; /* Mengurangi margin atas untuk tombol */
 }
 
 button:hover {
     background-color: #4cae4c;
 }
+
+
+
 
