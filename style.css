@@ -3,77 +3,50 @@ body {
     background-image: url('pemandangan pantai penimbangan.jpeg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Menjaga latar belakang tetap saat menggulir */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menggunakan 100% dari tinggi viewport */
     color: #333;
 }
 
-
-
 .centered-content {
-    text-align: center; /* Menyelaraskan teks ke tengah */
+    text-align: center;
+    width: 100%; /* Memastikan konten menggunakan lebar penuh */
 }
+
 h1 {
-    color: #000000; /* Fallback color */
-    background: -webkit-linear-gradient(white, black, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    left: 0;
-    right: 50px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    
-}
-
-h2{
-    color: #eaebea;
-    left: 0;
-    right: 50%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-label[for="vehicleType"] {
-    margin-left: 416px; /* Menggeser label ke kanan sebanyak 20px */
-}
-
-
-
-
-
-
-
-p {
-    font-size: 16px;
+    color: white; /* Mengubah warna teks untuk kontras yang lebih baik */
+    margin: 20px 0;
+    font-size: 24px; /* Ukuran font yang lebih besar untuk visibilitas */
 }
 
 button {
     background-color: #5cb85c;
     color: white;
-    left: 0;
-    right: 50%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
+    padding: 15px 30px;
+    font-size: 18px; /* Ukuran font yang lebih besar untuk kenyamanan tap */
+    margin: 10px;
     cursor: pointer;
     border-radius: 5px;
+    width: 80%; /* Lebar tombol yang lebih besar */
 }
 
 button:hover {
     background-color: #4cae4c;
 }
 
-
-
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
 
