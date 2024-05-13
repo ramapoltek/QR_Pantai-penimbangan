@@ -1,52 +1,107 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('pemandangan pantai penimbangan.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Menjaga latar belakang tetap saat menggulir */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center center; /* Memastikan gambar selalu di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Membuat gambar latar tidak bergeser bersama dengan konten saat di-scroll */
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Menggunakan 100% dari tinggi viewport */
+    padding: 0; /* Menghilangkan padding */
+    height: 100vh; /* Memastikan body memiliki tinggi minimal sama dengan tinggi viewport */
     color: #333;
 }
 
-.centered-content {
-    text-align: center;
-    width: 100%; /* Memastikan konten menggunakan lebar penuh */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Mengubah attachment menjadi scroll di perangkat kecil */
+        background-position: top center; /* Mengoptimalkan posisi gambar di perangkat mobile */
+    }
 }
 
+.centered-content {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
 h1 {
-    color: white; /* Mengubah warna teks untuk kontras yang lebih baik */
-    margin: 20px 0;
-    font-size: 24px; /* Ukuran font yang lebih besar untuk visibilitas */
+    color: #000000; /* Fallback color */
+    background: -webkit-linear-gradient(white, black, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0;
+    right: 50px;
+    text-align: center;
+    margin: 0 auto 20px; /* Menambahkan margin bawah */
+    padding: 10px 0; /* Menambahkan padding atas dan bawah untuk judul */
+    border-radius: 5px;
+    font-size: 24px; /* Meningkatkan ukuran font untuk judul */
+    text-align: center; /* Teks rata tengah */
+}
+
+
+label[for="vehicleType"] {
+    margin-left: 416px; /* Menggeser label ke kanan sebanyak 20px */
+    color: black;
+}
+
+
+p {
+    font-size: 16px;
 }
 
 button {
     background-color: #5cb85c;
     color: white;
+    left: 0;
+    right: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 20px; /* Menyesuaikan padding untuk tombol */
     border: none;
-    padding: 15px 30px;
-    font-size: 18px; /* Ukuran font yang lebih besar untuk kenyamanan tap */
-    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Meningkatkan ukuran font untuk tombol */
+    margin: 5px 2px; /* Mengurangi margin atas untuk tombol */
     cursor: pointer;
     border-radius: 5px;
-    width: 80%; /* Lebar tombol yang lebih besar */
+    width: auto; /* Mengubah lebar menjadi auto agar tidak memenuhi seluruh lebar layar */
+    padding: 10px;
+    margin-top: 5px; /* Mengurangi margin atas untuk tombol */
 }
 
 button:hover {
     background-color: #4cae4c;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
-    button {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
+/* Styling untuk Popup */
+.popup-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.popup-content p {
+    font-size: 24px; /* Perbesar teks Terima Kasih */
+    color: #333;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
