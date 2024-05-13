@@ -7,9 +7,13 @@ function payWithEWallet() {
     } else {
         // Simulasi proses pembayaran
         paymentStatus.innerHTML = "Pembayaran Rp" + vehicleType + " berhasil. Silakan lanjutkan pembayaran.";
-        alert("Terima Kasih"); // Menambahkan alert "Terima Kasih"
+        showPopup(); // Menampilkan popup "Terima Kasih"
         
         // Redirect ke payment link Midtrans
-        window.location.href = "https://app.sandbox.midtrans.com/payment-links/1715559557735";
+        window.location.href = "https://app.sandbox.midtrans.com/payment-links/1715437954712";
     }
+}
+
+function showPopup() {
+    document.getElementById('thankYouPopup').style.display = 'flex';
 }
