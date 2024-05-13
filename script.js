@@ -10,6 +10,6 @@ function payWithEWallet() {
         alert("Terima Kasih"); // Menambahkan alert "Terima Kasih"
         
         // Redirect ke payment link Midtrans
-        window.location.href = "https://app.sandbox.midtrans.com/payment-links/1715437954712";
+        window.location.href = "https://app.sandbox.midtrans.com/payment-links/1715559557735";
     }
 }
