@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parkir pantai penimbangan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Parkir Pantai Penimbangan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="centered-content">
-        <h1>selamat datang di pantai penimbangan</h1>
-        <label for="vehicleType">Jenis Kendaraan:</label>
-        <select id="vehicleType" onchange="updatePrice()">
-            <option value="0">Pilih Kendaraan</option>
-            <option value="2000">Sepeda Motor - Rp2.000</option>
-            <option value="5000">Mobil - Rp5.000</option>
-        </select>
-        <button onclick="payWithEWallet()">Bayar dengan E-Wallet</button>
-        <p id="paymentStatus"></p>
+    <h1>Selamat Datang di Pantai Penimbangan</h1>
+    <select id="vehicleType" onchange="updatePrice()">
+        <option value="0">Pilih Jenis Kendaraan</option>
+        <option value="2000">Sepeda Motor - Rp2.000</option>
+        <option value="5000">Mobil - Rp5.000</option>
+    </select>
+    
+    <button onclick="payWithEWallet()">Bayar dengan E-Wallet</button>
+    <p id="paymentStatus"></p>
+
+    <!-- Popup untuk Terima Kasih -->
+    <div id="thankYouPopup" class="popup-container" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Terima Kasih</p>
+      </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
