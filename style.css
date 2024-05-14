@@ -9,6 +9,10 @@ body {
     padding: 0; /* Menghilangkan padding */
     height: 100vh; /* Memastikan body memiliki tinggi minimal sama dengan tinggi viewport */
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Menyelaraskan teks ke tengah */
 }
 
 @media (max-width: 768px) {
@@ -21,27 +25,25 @@ body {
 .centered-content {
     text-align: center; /* Menyelaraskan teks ke tengah */
 }
+
 h1 {
     color: #000000; /* Fallback color */
     background: -webkit-linear-gradient(white, black, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    left: 0;
-    right: 50px;
     text-align: center;
     margin: 0 auto 20px; /* Menambahkan margin bawah */
     padding: 10px 0; /* Menambahkan padding atas dan bawah untuk judul */
     border-radius: 5px;
     font-size: 24px; /* Meningkatkan ukuran font untuk judul */
-    text-align: center; /* Teks rata tengah */
 }
-
 
 label[for="vehicleType"] {
-    margin-left: 416px; /* Menggeser label ke kanan sebanyak 20px */
+    margin: 0 auto; /* Menggeser label ke tengah */
     color: black;
+    display: block;
+    width: fit-content;
 }
-
 
 p {
     font-size: 16px;
@@ -50,23 +52,15 @@ p {
 button {
     background-color: #5cb85c;
     color: white;
-    left: 0;
-    right: 50%;
     text-align: center;
     margin: 0 auto;
     padding: 12px 20px; /* Menyesuaikan padding untuk tombol */
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 18px; /* Meningkatkan ukuran font untuk tombol */
     margin: 5px 2px; /* Mengurangi margin atas untuk tombol */
     cursor: pointer;
     border-radius: 5px;
     width: auto; /* Mengubah lebar menjadi auto agar tidak memenuhi seluruh lebar layar */
-    padding: 10px;
-    margin-top: 5px; /* Mengurangi margin atas untuk tombol */
 }
 
 button:hover {
