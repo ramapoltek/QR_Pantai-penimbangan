@@ -46,6 +46,12 @@ label[for="vehicleType"] {
     width: fit-content;
 }
 
+select#vehicleType {
+    font-size: 20px; /* Memperbesar ukuran font untuk dropdown */
+    padding: 10px; /* Menambahkan padding untuk dropdown */
+    margin: 10px 0; /* Menambahkan margin atas dan bawah */
+}
+
 p {
     font-size: 16px;
 }
@@ -55,9 +61,9 @@ button {
     color: white;
     text-align: center;
     margin: 0 auto;
-    padding: 12px 20px; /* Menyesuaikan padding untuk tombol */
+    padding: 10px 18px; /* Menyesuaikan padding untuk tombol */
     border: none;
-    font-size: 18px; /* Meningkatkan ukuran font untuk tombol */
+    font-size: 16px; /* Mengecilkan ukuran font untuk tombol */
     margin: 5px 2px; /* Mengurangi margin atas untuk tombol */
     cursor: pointer;
     border-radius: 5px;
