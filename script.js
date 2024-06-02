@@ -7,12 +7,8 @@ function payWithEWallet() {
     } else {
         // Simulasi proses pembayaran
         paymentStatus.innerHTML = "Pembayaran Rp" + vehicleType + " berhasil. Silakan lanjutkan pembayaran.";
-        showPopup(); // Menampilkan popup "Terima Kasih"
-        
-        // Redirect ke halaman pembayaran Shopee
-        setTimeout(function() {
-            window.location.href = "https://link.dana.id/p2mlink?params=[orderId=c8m5fcna] "; // Ganti dengan URL pembayaran Shopee yang benar
-        }, 2000); // Tunggu 2 detik sebelum redirect
+
+        // Redirect ke halaman pembayaran yang Anda buat
+        window.location.href = "https://link.dana.id/p2mlink?params=[orderId=c8m5fcna]"; // Ganti dengan URL pembayaran Anda yang benar
     }
 }
-
