@@ -9,6 +9,6 @@ function payWithEWallet() {
         paymentStatus.innerHTML = "Pembayaran Rp" + vehicleType + " berhasil. Silakan lanjutkan pembayaran.";
 
         // Redirect ke halaman pembayaran yang Anda buat
-        window.location.href = "Terima Kasih"; // Ganti dengan URL pembayaran Anda yang benar
+        window.location.href = "WhatsApp Image 2024-06-02 at 13.36.29_c0ad5229.jpg"; 
     }
 }
