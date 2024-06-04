@@ -9,6 +9,6 @@ function payWithEWallet() {
         paymentStatus.innerHTML = "Pembayaran Rp" + vehicleType + " berhasil. Silakan lanjutkan pembayaran.";
 
         // Redirect ke halaman pembayaran yang Anda buat
-        window.location.href = "https://link.dana.id/p2mlink?params=[orderId=c8m5fcna]"; // Ganti dengan URL pembayaran Anda yang benar
+        window.location.href = "Terima Kasih"; // Ganti dengan URL pembayaran Anda yang benar
     }
 }
